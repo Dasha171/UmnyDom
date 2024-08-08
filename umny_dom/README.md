@@ -1,16 +1,26 @@
 # umny_dom
 
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+*Функционашльность*
+- Управление лестницей с приложения.
+- Авторизация админа.
+- Главный экран с отображением списка элементов выбора цвета.
+- Сохранение настроек.
+- Выбор настроек с интернетом.
+- Страница натроек админа.
+- Передача цвета Rest Api.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+*Что работает*
+- Авторизация админа.
+- Главный экран с отображением списка элементов выбора цвета.
+- Выбор настроек с интернетом.
+- Выбор цвета и правильное отображение ColorPicker.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+*Что не работает или требует доработки* 
+- Сохранение настроек.
+- Страница натроек админа.
+- Дизайн и кнопки доработать.
+- Сделать передачу цветов через Rest Api.
