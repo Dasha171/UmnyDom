@@ -9,7 +9,7 @@ class AdminPage extends StatelessWidget {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          automaticallyImplyLeading: false, // Remove default back button
+          automaticallyImplyLeading: false, // Кнопка назад
           flexibleSpace: Stack(
             children: <Widget>[
               Center(
@@ -39,7 +39,7 @@ class AdminPage extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
       child: Container(
-        padding: EdgeInsets.fromLTRB(10, 100, 10, 100), // Adjusted padding
+        padding: EdgeInsets.fromLTRB(10, 100, 10, 100), // Отступ
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/image.png'),
@@ -84,7 +84,7 @@ class AdminPage extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 17),
                     ),
                     SizedBox(height: 5),
-                    // Radio buttons for Type of Tape
+                    // Переключатели для выбора типа ленты
                     Row(
                       children: [
                         RadioWidget(title: 'Monochrom'),
@@ -118,7 +118,7 @@ class AdminPage extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 17),
                     ),
                     SizedBox(height: 5),
-                    // Radio buttons for Type of Sensor1
+                    // Переключатели для типа датчика1
                     Row(
                       children: [
                         RadioWidget(title: 'внутренний'),
@@ -144,7 +144,7 @@ class AdminPage extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 17),
                     ),
                     SizedBox(height: 5),
-                    // Radio buttons for Type of Sensor2
+                    // Переключатели для типа датчика2
                     Row(
                       children: [
                         RadioWidget(title: 'внутренний'),
@@ -195,7 +195,7 @@ class AdminPage extends StatelessWidget {
     );
   }
 }
-
+// Регулятор скорости
 class SpeedControl extends StatefulWidget {
   final String imagePath;
   final String labelText;
@@ -240,7 +240,6 @@ class _SpeedControlState extends State<SpeedControl> {
             SizedBox(width: 10),
             // Value and Buttons
             Spacer(),
-            // Square with numbers
             Container(
               height: 40,
               width: 40,
