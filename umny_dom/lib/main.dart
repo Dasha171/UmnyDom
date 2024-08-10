@@ -133,7 +133,7 @@ class MainPage extends StatelessWidget {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start, // Align buttons to the left
+            crossAxisAlignment: CrossAxisAlignment.start, 
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(bottom: 5),
@@ -433,7 +433,6 @@ class _ColorPickerControlState extends State<ColorPickerControl> {
               child: Text('Ок'),
               onPressed: () {
                 setState(() {
-                  // Set the selected color here
                 });
                 Navigator.of(context).pop();
               },
@@ -503,7 +502,7 @@ class SliderControl extends StatefulWidget {
 
 class _SliderControlState extends State<SliderControl> {
   double currentValue = 0.0;
-  final double maxValue = 250.0; // Adjust the max value as needed
+  final double maxValue = 250.0; 
 
   void updateValue(double newValue) {
     setState(() {
@@ -527,7 +526,7 @@ class _SliderControlState extends State<SliderControl> {
             Spacer(),
             // Square with numbers
             Transform.translate(
-              offset: Offset(0, -60), // Adjusted offset here
+              offset: Offset(0, -60), 
               child: Container(
                 height: 40,
                 width: 40,
@@ -550,7 +549,7 @@ class _SliderControlState extends State<SliderControl> {
             Column(
               children: [
                 Transform.translate(
-                  offset: Offset(0, -60), // Adjusted offset here
+                  offset: Offset(0, -60), 
                   child: Container(
                     height: 20,
                     width: 35,
@@ -566,7 +565,7 @@ class _SliderControlState extends State<SliderControl> {
                     child: Align(
                       alignment: Alignment.center,
                       child: Transform.translate(
-                        offset: Offset(0, -5), // Offset for the triangle icon
+                        offset: Offset(0, -5), 
                         child: IconButton(
                           icon: Icon(Icons.arrow_drop_up, size: 35, color: Colors.white),
                           padding: EdgeInsets.zero,
@@ -582,7 +581,7 @@ class _SliderControlState extends State<SliderControl> {
                 ),
                 SizedBox(height: 1),
                 Transform.translate(
-                  offset: Offset(0, -60), // Adjusted offset here
+                  offset: Offset(0, -60), 
                   child: Container(
                     height: 20,
                     width: 35,
@@ -598,7 +597,7 @@ class _SliderControlState extends State<SliderControl> {
                     child: Align(
                       alignment: Alignment.center,
                       child: Transform.translate(
-                        offset: Offset(0, -5), // Offset for the triangle icon
+                        offset: Offset(0, -5), // Смещение для значка треугольника
                         child: IconButton(
                           icon: Icon(Icons.arrow_drop_down, size: 35, color: Colors.white),
                           padding: EdgeInsets.zero,
@@ -618,7 +617,7 @@ class _SliderControlState extends State<SliderControl> {
         ),
         SizedBox(height: 0),
         Transform.translate(
-          offset: Offset(0, -50), // Adjusted offset for the Slider
+          offset: Offset(0, -50), // Скорректированное смещение ползунка
           child: Slider(
             min: 0,
             max: maxValue,
