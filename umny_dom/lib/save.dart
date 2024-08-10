@@ -11,7 +11,7 @@ class SavePage extends StatelessWidget {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          automaticallyImplyLeading: false, // Remove default back button
+          automaticallyImplyLeading: false, // Кнопка назад
           flexibleSpace: Stack(
             children: <Widget>[
               Center(
@@ -31,7 +31,7 @@ class SavePage extends StatelessWidget {
                     'assets/images/nazad.png',
                     width: 40,
                     height: 40,
-                    fit: BoxFit.contain, // Adjust the fit as needed
+                    fit: BoxFit.contain, 
                     alignment: Alignment.center,
                   ),
                 ),
@@ -53,7 +53,7 @@ class SavePage extends StatelessWidget {
               ),
             ),
           ),
-          // Content Centered with Padding
+          // Содержимое центрировано с помощью отступов
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: SingleChildScrollView(
@@ -61,8 +61,8 @@ class SavePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(height: 200), // Space to push content up
-                  // Row with Image and Text Field
+                  SizedBox(height: 200), // Пространство для размещения контента
+                  // Строка с изображением и текстовым полем
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -101,7 +101,7 @@ class SavePage extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 30),
-                  // Save Settings Button
+                  // Кнопка сохранить
                   ElevatedButton(
                     onPressed: () {
                       // Handle button press action here
